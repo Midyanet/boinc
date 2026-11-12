@@ -1,0 +1,6 @@
+// Midyanet — gömülü client derlemesi için tüm xcodebuild çağrılarına uygulanan
+// ayarlar (XCODE_XCCONFIG_FILE). Upstream boinc.xcodeproj değiştirilmez.
+// Upstream varsayılanı 10.13; Xcode 27 en az 12.0 kabul ediyor.
+MACOSX_DEPLOYMENT_TARGET = 12.0
+ARCHS = arm64 x86_64
+ONLY_ACTIVE_ARCH = NO

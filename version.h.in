@@ -1,0 +1,66 @@
+// BOINC version definitions.
+// version.h is automatically updated by `configure` on *nix systems
+// Do not edit version.h directly
+//
+// To update versions run:
+// - for the client/manager: set-client-version.py
+// - for the vboxwrapper: set-vboxwrapper-version.py
+// - for the worker: set-worker-version.py
+// - for the wrapper: set-wrapper-version.py
+
+#ifndef BOINC_VERSION_H
+#define BOINC_VERSION_H
+
+// Major part of client version number
+#define BOINC_MAJOR_VERSION @BOINC_MAJOR_VERSION@
+
+// Minor part of client version number
+#define BOINC_MINOR_VERSION @BOINC_MINOR_VERSION@
+
+// Release part of client version number
+#define BOINC_RELEASE @BOINC_RELEASE@
+
+// wrapper version number
+#define WRAPPER_RELEASE @WRAPPER_RELEASE@
+
+// vboxwrapper version number
+#define VBOXWRAPPER_RELEASE @VBOXWRAPPER_RELEASE@
+
+// worker version number
+#define WORKER_RELEASE @WORKER_RELEASE@
+
+// dockerwrapper version number
+#define DOCKERWRAPPER_RELEASE @DOCKERWRAPPER_RELEASE@
+
+// multi_thread version number
+#define MULTITHREAD_RELEASE @MULTITHREAD_RELEASE@
+
+// client version number as string
+#define BOINC_VERSION_STRING "@BOINC_VERSION_STRING@"
+
+// Package is a pre-release (Alpha/Beta) package
+//#define BOINC_PRERELEASE 1
+
+#if (defined(_WIN32) || defined(__APPLE__))
+// Name of package */
+#define PACKAGE "@PACKAGE@"
+
+// address where bug reports for this package should be sent.
+#define PACKAGE_BUGREPORT "@PACKAGE_BUGREPORT@"
+
+// full name of this package.
+#define PACKAGE_NAME "@PACKAGE_NAME@"
+
+// full name and version of this package.
+#define PACKAGE_STRING "@PACKAGE_STRING@"
+
+// short name of this package.
+#define PACKAGE_TARNAME "@PACKAGE_TARNAME@"
+
+// version of this package.
+#define PACKAGE_VERSION "@PACKAGE_VERSION@"
+
+#endif /* #if (defined(_WIN32) || defined(__APPLE__)) */
+
+#endif /* #ifndef BOINC_VERSION_H */
+
